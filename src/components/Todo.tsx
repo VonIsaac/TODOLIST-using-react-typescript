@@ -8,7 +8,7 @@ const Todo: React.FC = () => {
 
 
     return(
-        <ul>
+        <ul className=" flex justify-center items-center flex-col ">
             {todoCtx.items.map((item) => (
                 <TodoItem key={item.id} text={item.text} onRemoveTodo={todoCtx.removeTodo.bind(null, item.id)} />
             ))}
