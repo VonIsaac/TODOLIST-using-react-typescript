@@ -1,13 +1,16 @@
 
-import './App.css'
+import NewTodo from "./components/NewTodo"
+import Todo from "./components/Todo"
+import  TodoContexProvider from "./store/todo-contex"
 
 function App() {
   
 
   return (
-    <>
-      <h1 className=' text-red-300 text-2xl '>HELLO TAILWIND</h1>
-    </>
+   <TodoContexProvider>
+      <NewTodo />
+      <Todo />
+   </ TodoContexProvider>
   )
 }
 
